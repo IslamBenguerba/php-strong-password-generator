@@ -14,7 +14,7 @@ function randomWord($ampiezzza, $alfabeto, $alfabetoPiccolo, $pass)
         if (rand(0, 1) === 1) {
             $lettera = $alfabeto[$indice];
             // echo $lettera;
-        } else if (rand(0, 1) === 0) {
+        } else  {
             $lettera = $alfabetoPiccolo[$indice];
             // echo $lettera;
         }
@@ -34,7 +34,7 @@ function onlySmall($ampiezzza, $alfabeto, $alfabetoPiccolo, $pass)
         if (rand(0, 1) === 1) {
             $lettera = rand(0, 10);
             // echo $lettera;
-        } else if (rand(0, 1) === 0) {
+        } else  {
             $lettera = $alfabetoPiccolo[$indice];
             // echo $lettera;
         }
@@ -54,7 +54,7 @@ function onlyBig($ampiezzza, $alfabeto, $pass)
         if (rand(0, 1) === 1) {
             $lettera = $alfabeto[$indice];
             // echo $lettera;
-        } else if (rand(0, 1) === 0) {
+        } else  {
             $lettera = rand(0, 10);
             // echo $lettera;
         }
